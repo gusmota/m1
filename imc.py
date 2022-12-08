@@ -8,22 +8,17 @@ while True:
         apellidos = input("Ingrese sus apellidos: ")
         apellidos[0]
 
+        edad = float(input("Ingrese su edad: "))
+        peso = float(input("Ingrese su peso: "))
+        altura = float(input("Ingrese su altura: "))
+
         break
 
-    except:
+    except IndexError:
         print("Error: Ingrese caracteres en este campo")
 
-try:
-    edad = float(input("Ingrese su edad: "))
-    peso = float(input("Ingrese su peso: "))
-    altura = float(input("Ingrese su altura: "))
-
-    edad - altura 
-    nombre[:1]
-
-except:
-    print("Error: Ingrese números en este campo")
-    exit()
+    except ValueError:
+        print("Error: Ingrese números en este campo")
 
 # cálculo del IMC 
 imc = peso / altura ** 2

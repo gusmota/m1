@@ -24,5 +24,3 @@ while True:
 imc = peso / altura ** 2
 
 print(nombre, apellidos, "tiene", edad, "años y su índice de masa corporal es", imc)
-
-#comentario de la nueva versión
